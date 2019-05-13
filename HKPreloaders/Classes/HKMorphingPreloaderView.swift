@@ -14,7 +14,7 @@ fileprivate let ANIM_DURATION: CFTimeInterval = 1.5
 fileprivate let ANIM_KEY_CONTAINER_OPACITY = "ak_container_op"
 fileprivate let ANIM_KEY_ORB_BORDER_RADIUS = "ak_orb_bord"
 
-class HKMorphingPreloaderView: UIView{
+public class HKMorphingPreloaderView: UIView{
     
     @IBOutlet private weak var red: UIView!
     @IBOutlet private weak var orange: UIView!
@@ -55,7 +55,7 @@ class HKMorphingPreloaderView: UIView{
         return loadedView
     }
     
-    func show(){
+    public func show(){
         
         // MARK: Setup for the animation
         
@@ -95,7 +95,7 @@ class HKMorphingPreloaderView: UIView{
         
     }
     
-    func hide(){
+    public func hide(){
         
         container.layer.removeAllAnimations()
         red.layer.removeAllAnimations()
