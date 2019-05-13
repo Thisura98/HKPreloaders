@@ -6,7 +6,7 @@
 <a><img src="https://img.shields.io/badge/CocoaPods-compatible-4BC51D.svg?style=flat"></a>
 </p>
 
-![Example](Pod - Example.gif)
+![Example Gif](https://github.com/Thisura98/HKPreloaders/raw/master/Pod%20-%20Example.gif)
 
 A set of preloader animations written in Swift. The animations utilize `CAKeyframeAnimation` objects and the views for the preloaders are instantiated from the `.xib` files. The following animation classes are provided.
 
