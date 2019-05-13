@@ -55,7 +55,8 @@ public class HKSpinningPreloaderView: UIView{
     }
     
     private func loadViewFromNib() -> UIView{
-        let nib = UINib(nibName: "HKSpinningPreloaderView", bundle: nil)
+        let bundle = Bundle(for: HKSpinningPreloaderView.self)
+        let nib = UINib(nibName: "HKSpinningPreloaderView", bundle: bundle)
         let loadedView = nib.instantiate(withOwner: self, options: nil).first as! UIView
         return loadedView
     }
