@@ -24,10 +24,10 @@ A set of preloader animations written in Swift. The animations utilize `CAKeyfra
 
 ### Cocoapods ###
 
-HKPreloaders is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile. Then run `pod install`.
+HKPreloaders is not yet published to cocoapods, but you can still add the following to your `Podfile` to use it in your iOS project. Simply add the line and run `pod install`.
 
 ```ruby
-pod 'HKPreloaders'
+pod 'HKPreloaders', :git => 'https://github.com/Thisura98/HKPreloaders.git'
 ```
 
 ## Example
