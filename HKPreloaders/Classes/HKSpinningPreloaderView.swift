@@ -18,9 +18,7 @@ fileprivate let ANIM_ORB_HIGHER_MIDWAY_SCALE: CGFloat = (1 - ANIM_ORB_SMALLEST_S
 fileprivate let ANIM_KEY_CONTAINER_ROTATE = "ak_container_r"
 fileprivate let ANIM_KEY_ORB_SCALE = "ak_orb_s"
 
-
-
-class HKSpinningPreloaderView: UIView{
+public class HKSpinningPreloaderView: UIView{
     
     @IBOutlet private weak var red: UIView!
     @IBOutlet private weak var orange: UIView!
@@ -62,7 +60,7 @@ class HKSpinningPreloaderView: UIView{
         return loadedView
     }
     
-    func show(){
+    public func show(){
         
         // MARK: Setup for the animation
         
@@ -186,7 +184,7 @@ class HKSpinningPreloaderView: UIView{
         
     }
     
-    func hide(){
+    public func hide(){
         container.layer.removeAllAnimations()
         red.layer.removeAllAnimations()
         orange.layer.removeAllAnimations()
