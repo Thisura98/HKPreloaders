@@ -34,7 +34,7 @@ pod 'HKPreloaders'
 
 ### Storyobards ###
 
-Simply create a new `UIView`, and change it's class to one of the A
+Simply create a new `UIView`, and change it's class to one of the Animation classes. Create a reference to the views on your class files. All animation classes implement the `.show()` and `.hide()` methods. Use these methods to control the visibility of the animations!
 
 ### In-code ###
 
