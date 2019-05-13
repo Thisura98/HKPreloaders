@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'HKPreloaders_Example' do
+  pod 'HKPreloaders', :path => '../'
+
+  target 'HKPreloaders_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,6 @@
+framework module HKPreloaders {
+  umbrella header "HKPreloaders-umbrella.h"
+
+  export *
+  module * { export * }
+}

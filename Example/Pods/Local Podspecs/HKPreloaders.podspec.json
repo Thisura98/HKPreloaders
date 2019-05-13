@@ -1,0 +1,22 @@
+{
+  "name": "HKPreloaders",
+  "version": "0.1.0",
+  "summary": "A short description of HKPreloaders.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Thisura98/HKPreloaders",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Thisura98": "thisura1998@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Thisura98/HKPreloaders.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HKPreloaders/Classes/**/*"
+}

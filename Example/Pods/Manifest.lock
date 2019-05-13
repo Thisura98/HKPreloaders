@@ -1,0 +1,16 @@
+PODS:
+  - HKPreloaders (0.1.0)
+
+DEPENDENCIES:
+  - HKPreloaders (from `../`)
+
+EXTERNAL SOURCES:
+  HKPreloaders:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HKPreloaders: 4ac6ec7129d5fd1b7097a223044cb5ecaa90d55a
+
+PODFILE CHECKSUM: 33c333a9009a1719b9aa75e5bcff8b02da845e0b
+
+COCOAPODS: 1.6.1
