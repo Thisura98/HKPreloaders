@@ -55,7 +55,7 @@ public class HKSpinningPreloaderView: UIView{
     }
     
     private func loadViewFromNib() -> UIView{
-        let bundle = Bundle(for: HKSpinningPreloaderView.self)
+        let bundle = ResourceLoader.getBundle(forClass: HKSpinningPreloaderView.self)
         let nib = UINib(nibName: "HKSpinningPreloaderView", bundle: bundle)
         let loadedView = nib.instantiate(withOwner: self, options: nil).first as! UIView
         return loadedView
@@ -130,7 +130,6 @@ public class HKSpinningPreloaderView: UIView{
         // MARK: Red orb scale animation
         r_s.duration = ANIM_ORB_DURATION
         r_s.repeatCount = ANIM_REPEAT_COUNT
-        // r_s.keyTimes = [0.0, 3.0/8.0, 7.0/8.0, 1.0]
         r_s.keyTimes = [0.0, n3_8, n7_8, 1.0]
         r_s.values = [
             higherMidwayScaleTransform,
@@ -142,7 +141,6 @@ public class HKSpinningPreloaderView: UIView{
         // MARK: Orange orb scale animation
         o_s.duration = ANIM_ORB_DURATION
         o_s.repeatCount = ANIM_REPEAT_COUNT
-        // o_s.keyTimes = [0.0, 1.0/8.0, 5.0/8.0, 1.0]
         o_s.keyTimes = [0.0, n1_8, n5_8, 1.0]
         o_s.values = [
             lowerMidwayScaleTransform,
@@ -154,7 +152,6 @@ public class HKSpinningPreloaderView: UIView{
         // MARK: Yellow orb scale animation
         y_s.duration = ANIM_ORB_DURATION
         y_s.repeatCount = ANIM_REPEAT_COUNT
-        // y_s.keyTimes = [0.0, 1.0/8.0, 5.0/8.0, 1.0]
         y_s.keyTimes = [0.0, n1_8, n5_8, 1.0]
         y_s.values = [
             higherMidwayScaleTransform,
@@ -166,7 +163,6 @@ public class HKSpinningPreloaderView: UIView{
         // MARK: Green orb scale animation
         g_s.duration = ANIM_ORB_DURATION
         g_s.repeatCount = ANIM_REPEAT_COUNT
-        // g_s.keyTimes = [0.0, 3.0/8.0, 7.0/8.0, 1.0]
         g_s.keyTimes = [0.0, n3_8, n7_8, 1.0]
         g_s.values = [
             lowerMidwayScaleTransform,

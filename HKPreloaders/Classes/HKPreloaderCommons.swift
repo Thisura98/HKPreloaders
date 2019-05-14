@@ -9,6 +9,14 @@
 import UIKit
 import Foundation
 
+internal class ResourceLoader{
+    static func getBundle(forClass: AnyClass) -> Bundle{
+        let podBundle = Bundle(for: forClass)
+        let path = podBundle.path(forResource: "HKPreloaders", ofType: "bundle")! // The resource bundle
+        return Bundle(path: path)!
+    }
+}
+
 enum HKPreloaderViewSize{
     case defaultSize
     case small
