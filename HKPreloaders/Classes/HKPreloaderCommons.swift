@@ -10,10 +10,29 @@ import UIKit
 import Foundation
 
 internal class ResourceLoader{
-    static func getBundle(forClass: AnyClass) -> Bundle{
+    
+    /**
+     Safely gets the correct bundle where
+     nibs are stored at.
+     
+     This class was implemented because I couldn't get this pod
+     to properly instantiate the UINib(s) when the pod's environment
+     changes between development and production-use.
+     
+     The solution: If we find the nested-bundle 'HKPreloaders' (generated
+     by the podspec, as the Resource Bundle) return it. This means the pod
+     is in a production-use environment. Otherwise, return the podBundle itself.
+     
+     - parameters:
+        - forClass: The class used to search for the top-level bundle
+     */
+    
+    static func getBundleForNibs(forClass: AnyClass) -> Bundle{
         let podBundle = Bundle(for: forClass)
-        let path = podBundle.path(forResource: "HKPreloaders", ofType: "bundle")! // The resource bundle
-        return Bundle(path: path)!
+        if let path = podBundle.path(forResource: "HKPreloaders", ofType: "bundle"){
+            return Bundle(path: path)!  // The resource bundle
+        }
+        return podBundle
     }
 }
 
