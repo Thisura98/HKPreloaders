@@ -50,7 +50,7 @@ public class HKMorphingPreloaderView: UIView{
     }
     
     private func loadViewFromNib() -> UIView{
-        let bundle = ResourceLoader.getBundle(forClass: HKMorphingPreloaderView.self)
+        let bundle = ResourceLoader.getBundleForNibs(forClass: HKMorphingPreloaderView.self)
         let nib = UINib(nibName: "HKMorphingPreloaderView", bundle: bundle)
         let loadedView = nib.instantiate(withOwner: self, options: nil).first as! UIView
         return loadedView
