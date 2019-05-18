@@ -20,6 +20,9 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         spinningPreloader.show()
+        
+        let c = HKPreloaderColorOptions(colors: [.purple, .cyan])
+        morphingPreloader.mode = .Colors(colors: c)
         morphingPreloader.show()
     }
     

@@ -20,6 +20,7 @@
 		EE1427B9228A3580007FB4EA /* HKSpinningPreloaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE1427B4228A357F007FB4EA /* HKSpinningPreloaderView.xib */; };
 		EE1427BA228A3580007FB4EA /* HKPreloaderCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1427B5228A357F007FB4EA /* HKPreloaderCommons.swift */; };
 		EE1427BB228A3580007FB4EA /* HKMorphingPreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1427B6228A357F007FB4EA /* HKMorphingPreloaderView.swift */; };
+		EE53650222904C4E0095029A /* HKPreloaderViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE53650122904C4E0095029A /* HKPreloaderViewBase.swift */; };
 		F207960CF4185C7F0812959DCC087F59 /* Pods-HKPreloaders_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65AB25E90667303466B567936275F70C /* Pods-HKPreloaders_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		EE1427B4228A357F007FB4EA /* HKSpinningPreloaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HKSpinningPreloaderView.xib; path = HKPreloaders/Assets/HKSpinningPreloaderView.xib; sourceTree = "<group>"; };
 		EE1427B5228A357F007FB4EA /* HKPreloaderCommons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HKPreloaderCommons.swift; path = HKPreloaders/Classes/HKPreloaderCommons.swift; sourceTree = "<group>"; };
 		EE1427B6228A357F007FB4EA /* HKMorphingPreloaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HKMorphingPreloaderView.swift; path = HKPreloaders/Classes/HKMorphingPreloaderView.swift; sourceTree = "<group>"; };
+		EE53650122904C4E0095029A /* HKPreloaderViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HKPreloaderViewBase.swift; sourceTree = "<group>"; };
 		FAD16EDB5BF7E2118ECA17C6CF73D3F5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FC230E231FCDB34BC32E94876C5A76C9 /* Pods-HKPreloaders_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HKPreloaders_Example-dummy.m"; sourceTree = "<group>"; };
 		FC9572B306FB3DB4F33FFF0FF003BAA7 /* Pods-HKPreloaders_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HKPreloaders_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -128,11 +130,12 @@
 		2BA8230266B4F1689E5F703629DFB151 /* HKPreloaders */ = {
 			isa = PBXGroup;
 			children = (
+				EE1427B5228A357F007FB4EA /* HKPreloaderCommons.swift */,
+				EE53650122904C4E0095029A /* HKPreloaderViewBase.swift */,
 				EE1427B6228A357F007FB4EA /* HKMorphingPreloaderView.swift */,
 				EE1427B2228A357F007FB4EA /* HKMorphingPreloaderView.xib */,
 				EE1427B3228A357F007FB4EA /* HKSpinningPreloaderView.swift */,
 				EE1427B4228A357F007FB4EA /* HKSpinningPreloaderView.xib */,
-				EE1427B5228A357F007FB4EA /* HKPreloaderCommons.swift */,
 				16A764805F86BB68B7B5F6231359367C /* Pod */,
 				6C8716A48444113D053E658D4089886A /* Support Files */,
 			);
@@ -396,6 +399,7 @@
 				EE1427BA228A3580007FB4EA /* HKPreloaderCommons.swift in Sources */,
 				EE1427B8228A3580007FB4EA /* HKSpinningPreloaderView.swift in Sources */,
 				9FDD19CC76A259B6D96F03ADB3D24426 /* HKPreloaders-dummy.m in Sources */,
+				EE53650222904C4E0095029A /* HKPreloaderViewBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

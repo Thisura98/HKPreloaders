@@ -18,52 +18,15 @@ fileprivate let ANIM_ORB_HIGHER_MIDWAY_SCALE: CGFloat = (1 - ANIM_ORB_SMALLEST_S
 fileprivate let ANIM_KEY_CONTAINER_ROTATE = "ak_container_r"
 fileprivate let ANIM_KEY_ORB_SCALE = "ak_orb_s"
 
-public class HKSpinningPreloaderView: UIView{
+public class HKSpinningPreloaderView: HKPreloaderViewBase{
     
-    @IBOutlet private weak var red: UIView!
-    @IBOutlet private weak var orange: UIView!
-    @IBOutlet private weak var yellow: UIView!
-    @IBOutlet private weak var green: UIView!
-    @IBOutlet private weak var container: UIView!
-    
-    private var orbRadius: CGFloat{
-        get{
-            return CGFloat(red.bounds.height) / 2
-        }
-    }
-    
-    private var view: UIView!
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        
-        internalInit()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        internalInit()
-    }
-    
-    private func internalInit(){
-        view = loadViewFromNib()
-        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.frame = bounds
-        addSubview(view)
-        backgroundColor = .clear
-        hide()
-    }
-    
-    private func loadViewFromNib() -> UIView{
-        let bundle = ResourceLoader.getBundleForNibs(forClass: HKSpinningPreloaderView.self)
-        let nib = UINib(nibName: "HKSpinningPreloaderView", bundle: bundle)
-        let loadedView = nib.instantiate(withOwner: self, options: nil).first as! UIView
-        return loadedView
-    }
-    
-    public func show(){
+    override public func show(){
         
         // MARK: Setup for the animation
+        
+        let orbRadius: CGFloat = CGFloat(truncating: self.orbRadius)
+        
+        self.setupOrbsAccordingToMode()
         
         let n1_8 = NSNumber(value: 1.0 / 8.0)
         let n3_8 = NSNumber(value: 3.0 / 8.0)
@@ -181,7 +144,7 @@ public class HKSpinningPreloaderView: UIView{
         
     }
     
-    public func hide(){
+    override public func hide(){
         container.layer.removeAllAnimations()
         red.layer.removeAllAnimations()
         orange.layer.removeAllAnimations()

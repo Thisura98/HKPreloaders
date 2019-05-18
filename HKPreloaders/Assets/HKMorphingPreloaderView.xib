@@ -10,9 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HKMorphingPreloaderView" customModule="animchal" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HKMorphingPreloaderView" customModule="HKPreloaders" customModuleProvider="target">
             <connections>
-                <outlet property="container" destination="kKr-rt-VgM" id="Uoa-KN-cXI"/>
+                <outlet property="container" destination="kKr-rt-VgM" id="nW0-vP-Pa7"/>
                 <outlet property="green" destination="14W-sN-uS5" id="fje-6j-Ybe"/>
                 <outlet property="orange" destination="cfS-9Z-TZs" id="Jqh-U8-lmT"/>
                 <outlet property="red" destination="LWb-Ew-CaK" id="xdu-Ms-EHK"/>
