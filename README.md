@@ -40,4 +40,7 @@ Simply create a new `UIView`, and change it's class to one of the Animation clas
 
 __TODO: Support is currently being added for in-code initialization!__ 
 
+
+## Contact
+
 Thisura98, thisura1998@gmail.com
