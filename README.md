@@ -30,6 +30,34 @@ HKPreloaders is not yet published to cocoapods, but you can still add the follow
 pod 'HKPreloaders', :git => 'https://github.com/Thisura98/HKPreloaders.git'
 ```
 
+## Customization
+
+- Color of each segment
+
+All `HKPreloader` animations inherit from `HKPreloaderViewBase`. You can modify the color of each variable setting the `mode` to `.Colors` and providing it with a `HKPreloaderColorOptions` object. Assume the following code:
+
+```
+class viewController: UIViewController{
+    @IBOutlet weak var preloader: HKMorphinPreloader!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let options = HKPreloaderColorOptions(colors: [.purple, .cyan, .orange])
+        preloader.mode = .Colors(colors: options)
+        preloader.show()
+    }
+}
+```
+
+This changes the final color of the orbs to purple, cyan, orange and purple. 
+
+If the color array provided contains less than 4 elements, it is cycled to fill in the rest of the elements.
+
+- Image of each segment
+
+_coming soon!_
+
+
 ## Example
 
 ### Storyobards ###
