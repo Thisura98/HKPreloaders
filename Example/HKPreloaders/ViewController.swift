@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         spinningPreloader.show()
         
-        let c = HKPreloaderColorOptions(colors: [.purple, .cyan])
+        let c = HKPreloaderColorOptions(colors: [.purple, .cyan, .orange])
         morphingPreloader.mode = .Colors(colors: c)
         morphingPreloader.show()
     }

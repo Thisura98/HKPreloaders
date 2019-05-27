@@ -25,6 +25,7 @@ public class HKSpinningPreloaderView: HKPreloaderViewBase{
         // MARK: Setup for the animation
         
         let orbRadius: CGFloat = CGFloat(truncating: self.orbRadius)
+        print("DEBUG: HKSpinningPreloaderView Orb Radius: \(orbRadius)")
         
         self.setupOrbsAccordingToMode()
         

@@ -40,6 +40,7 @@ public class HKMorphingPreloaderView: HKPreloaderViewBase{
         o_b.repeatCount = ANIM_REPEAT_COUNT
         o_b.keyTimes = [0.0, 0.2, 0.55, 0.75]
         o_b.values = [0.0, orbRadius, orbRadius, 0.0]
+        o_b.tensionValues = [0.0, 1.0, 1.0, 0.0]
         o_b.calculationMode = .cubic
         
         // MARK: Add animations to layers

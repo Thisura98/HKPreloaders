@@ -22,7 +22,9 @@ public class HKPreloaderViewBase: UIView{
     internal var view: UIView!
     internal var orbRadius: NSNumber{
         get{
-            return NSNumber(value: Float(red.bounds.height) / 2.0)
+            let radius = NSNumber(value: Float(red.bounds.height) / 2.0)
+            print("DEBUG: Returning orb radius: \(radius)")
+            return radius
         }
     }
     
