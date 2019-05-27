@@ -36,7 +36,7 @@ pod 'HKPreloaders', :git => 'https://github.com/Thisura98/HKPreloaders.git'
 
 All `HKPreloader` animations inherit from `HKPreloaderViewBase`. You can modify the color of each variable setting the `mode` to `.Colors` and providing it with a `HKPreloaderColorOptions` object. Assume the following code:
 
-```
+```swift
 class viewController: UIViewController{
     @IBOutlet weak var preloader: HKMorphinPreloader!
     
